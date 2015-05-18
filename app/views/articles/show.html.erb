@@ -1,0 +1,9 @@
+<%= @article.title %>
+<%= @article.description%>
+
+<%= link_to "Edit Article!", edit_category_article_path(category_id: @article.category_id) %>
+
+<%= form_for @article, url: category_article_path, method: "delete" do %>
+  <%= submit_tag 'Delete' %>
+<% end %>
+

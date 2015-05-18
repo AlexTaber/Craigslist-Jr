@@ -1,0 +1,16 @@
+form {
+  label {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: center;
+    width: 150px;
+    margin-left: 20px;
+  }
+  textarea {
+    width: 150px;
+    margin-left: 20px;
+  }
+  input {
+    @extend textarea
+  }
+}

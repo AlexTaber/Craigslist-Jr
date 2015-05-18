@@ -1,0 +1,5 @@
+<%= form_for @article, url: category_article_path, method: "put" do |article| %>
+  <%= article.text_field :title, value: @article.title %>
+  <%= article.text_area :description, value: @article.description %>
+  <%= article.submit %>
+<% end %>
